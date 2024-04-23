@@ -6,12 +6,12 @@ int ellipseDuration = 1000;
 boolean ellipseVisible = false;
 void setup() {
   //size(600, 600);
-  frameRate(30);
+  frameRate(30);//recuento de frames(es lo que hace a cuanta velocidad corre la animación)
   fullScreen();
 }
 void draw() {
 background(255);
-
+//lo que hace que circulos se generen aleatoriamente en la pantalla
 float cr= random(100,255);
   if (frameCount % ellipseInterval== 0 && ellipseTimer<5) {
     noStroke();
@@ -31,7 +31,8 @@ float cr= random(100,255);
       ellipseTimer = 0;
     }
   }
-
+//los arcos y circulos
+//nota:no encuentro como ponerle color a los arcos y poner más circulos al rededor de la pantalla
   noFill();
   stroke(0);
   strokeWeight(20);
